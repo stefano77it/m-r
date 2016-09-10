@@ -10,7 +10,8 @@ to see what the program to do see:
     - send command definition (in "SimpleCQRS/FakeBus.cs/Send")
       - sent commands (in "CQRSGui/HomeController.cs")
     - publish events definition (in "SimpleCQRS/FakeBus.cs/Publish")
-      - published events (in "SimpleCQRS/EventStore.cs/EventStore/SaveEvents")
+      - save events (in "SimpleCQRS/EventStore.cs/EventStore/SaveEvents")
+      - published events for further processing by subscribers (in "SimpleCQRS/EventStore.cs/EventStore/SaveEvents")
   - commands:
     - commands definition (in "SimpleCQRS/Commands.cs")
     - commands handlers definition (in "SimpleCQRS/CommandHandlers.cs")
