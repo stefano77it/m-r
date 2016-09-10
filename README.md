@@ -6,13 +6,14 @@ to see what the program to do see:
   - sent commands (in "CQRSGui/HomeController.cs")
 - CQRS implementation:
   - bus:
-    - handlers registration (in "SimpleCQRS/FakeBus.cs/FakeBus/RegisterHandler")
+    - handlers registration definition (in "SimpleCQRS/FakeBus.cs/FakeBus/RegisterHandler")
       - handlers registration fill a dictionary with Type as Key, Delegate as content (```Dictionary<Type, List<Action<Message>>> _routes``` in "SimpleCQRS/FakeBus.cs/FakeBus")
+      - handlers registration (in "CQRSGui/Global.asax.cs/Application_Start")
     - send command definition (in "SimpleCQRS/FakeBus.cs/FakeBus/Send")
       - sent commands (in "CQRSGui/HomeController.cs")
     - publish events definition (in "SimpleCQRS/FakeBus.cs/FakeBus/Publish")
       - save events (in "SimpleCQRS/EventStore.cs/EventStore/SaveEvents")
-      - published events for further processing by subscribers (in "SimpleCQRS/EventStore.cs/EventStore/SaveEvents")
+      - published events, for further processing by subscribers (in "SimpleCQRS/EventStore.cs/EventStore/SaveEvents")
   - commands:
     - commands definition (in "SimpleCQRS/Commands.cs")
     - commands handlers definition (in "SimpleCQRS/CommandHandlers.cs")
