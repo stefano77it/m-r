@@ -19,4 +19,5 @@ to see what the program to do see:
   - events:
     - events definition (in "SimpleCQRS/Events.cs")
     - events handlers definition ("InventoryItemDetailView" and "InventoryListView" in "SimpleCQRS/ReadModel.cs")
-
+- Relevant techniques:
+  - a dictionary with Type as Key, Delegate as content (```Dictionary<Type, List<Action<Message>>> _routes``` in "SimpleCQRS/FakeBus.cs/FakeBus"), filled by handlers registration 
