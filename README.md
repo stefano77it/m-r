@@ -5,7 +5,7 @@ to see what the program to do see:
   - the application start, with bus creation, handlers registration (in "CQRSGui/Global.asax.cs/Application_Start")
   - sent commands (in "CQRSGui/HomeController.cs")
 - CQRS implementation:
-  - dictionary with Type as Key, Delegate as content (Dictionary<Type, List<Action<Message>>> _routes in "SimpleCQRS/FakeBus.cs/FakeBus")
+  - dictionary with Type as Key, Delegate as content (```Dictionary<Type, List<Action<Message>>> _routes``` in "SimpleCQRS/FakeBus.cs/FakeBus")
   - bus:
     - handlers registration (in "SimpleCQRS/FakeBus.cs/FakeBus/RegisterHandler")
     - send command definition (in "SimpleCQRS/FakeBus.cs/FakeBus/Send")
